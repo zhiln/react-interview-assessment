@@ -9,7 +9,7 @@ function App() {
     document.getElementById('user').textContent = selectedUser
   })
 
-  const fetchUser = async () => {
+  const fetchUsers = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
     const body = await res.json()
     setUsers(body)
